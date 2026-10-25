@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: store_weekly_sales
+    description: One cleaned record per store and sales week.
+    columns:
+      - name: store_id
+        data_tests:
+          - not_null
+      - name: week_date
+        data_tests:
+          - not_null
+  - name: store_sales_summary
+    description: Overall sales performance aggregated by store.
+    columns:
+      - name: store_id
+        data_tests:
+          - not_null
+          - unique
+      - name: total_weekly_sales
+        data_tests:
+          - not_null

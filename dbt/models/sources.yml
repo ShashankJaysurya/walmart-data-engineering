@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: walmart
+    database: "{{ env_var('DATABRICKS_CATALOG') }}"
+    schema: "{{ env_var('DATABRICKS_SCHEMA') }}"
+    tables:
+      - name: raw_walmart_sales

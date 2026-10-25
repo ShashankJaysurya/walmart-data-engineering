@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_walmart_sales
+    description: Cleaned Walmart weekly store sales records.
+    columns:
+      - name: store_id
+        data_tests:
+          - not_null
+      - name: week_date
+        data_tests:
+          - not_null
+      - name: weekly_sales
+        data_tests:
+          - not_null
