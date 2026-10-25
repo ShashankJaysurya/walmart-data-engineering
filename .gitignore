@@ -10,3 +10,4 @@ dbt_packages/
 .env
 .env.*
 !.env.example
+.env copy.example
